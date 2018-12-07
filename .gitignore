@@ -1,0 +1,32 @@
+# Automated testing
+.php_cs.cache
+.phpunit.result.cache
+
+# Caches
+/storage/*.key
+/storage/debugbar
+/storage/tmp
+
+# IDEs
+/.idea
+/.vscode
+
+# Macs
+**/.DS_Store
+
+# Package Managers
+/vendor
+/node_modules
+yarn-error.log
+npm-debug.log
+
+# Public dir
+/public/css
+/public/fonts
+/public/images
+/public/js
+
+# Secrets
+provisioning/deploy.sh
+.env
+.env.production

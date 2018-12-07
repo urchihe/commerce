@@ -1,0 +1,21 @@
+@each $key, $size in $text-sizes {
+	.text-#{$key} {
+		font-size: #{$size};
+	}
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-gray-dark {
+    color: $gray-dark;
+}
+
+.text-green {
+    color: $green-dark;
+}

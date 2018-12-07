@@ -1,0 +1,20 @@
+// Output all sides for various spacing options.
+@mixin padding-sides($size, $padding) {
+	@each $key, $side in $sides {
+		.padding-#{$key}-#{$size} {
+			padding-#{$side}: #{$padding};
+		}
+	}
+}
+
+@each $size, $spacing in $spacings {
+	@include padding-sides($size, $spacing);
+
+    // Also add all-sides padding utility for each size.
+    .padding-#{$size} {
+        padding-bottom: $spacing;
+        padding-left: $spacing;
+        padding-right: $spacing;
+        padding-top: $spacing;
+    }
+}
